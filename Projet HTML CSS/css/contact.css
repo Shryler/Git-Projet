@@ -1,0 +1,42 @@
+ul{
+    list-style: none;
+    margin: 1em;
+}
+
+li{
+    
+}
+
+body{
+    min-width: 375px;
+    max-width: 667px;
+    height: auto;
+}
+
+#contact-conteneur{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    align-items: center;
+    margin : 10px;
+}
+
+
+#contact-conteneur h1{
+    text-align: center;
+    width: 100%;}
+
+#contact-conteneur ul{
+    align-self:flex-start;
+}
+
+#contact-conteneur #formulaire-de-contact{
+    align-self: flex-start;
+    width: 100%;
+    
+}
+
+#contact-conteneur textarea{
+    width: 80%;
+    height: 200px;
+}
