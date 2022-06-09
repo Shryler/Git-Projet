@@ -1,0 +1,31 @@
+/***********PATRICK :D***********/
+body{
+    margin:0; /*Pour ne plus avoir de marge*/
+}
+footer{
+    background-color: rgb(47, 0, 255);
+    max-width: 100%;
+    height: 170px;
+    
+}
+
+body div{
+    height:500px;
+}
+
+.flex{
+
+    display: flex;
+}
+.jc-c{
+
+    justify-content: center;
+}
+
+.fs-30{
+    font-size: 30px;
+}
+
+.m-10{
+    margin: 10px;
+}
