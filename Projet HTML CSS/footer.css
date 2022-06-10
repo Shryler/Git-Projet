@@ -1,25 +1,36 @@
 /***********PATRICK :D***********/
 body{
     margin:0; /*Pour ne plus avoir de marge*/
+    font-family: 'Monserrat', sans-serif;
 }
 footer{
-    background-color: rgb(47, 0, 255);
+    background-color: #548DBF; 
     max-width: 100%;
-    height: 170px;
+    height: 350px;
     
 }
 
 body div{
-    height:500px;
+    height:110px;
 }
-
+.color{
+    color: white;
+}
 .flex{
 
     display: flex;
 }
+.flex-r{
+    display: flex;
+    flex-direction: row;
+}
 .jc-c{
 
     justify-content: center;
+}
+.ai-b
+{
+    align-items: baseline;
 }
 
 .fs-30{
@@ -28,4 +39,32 @@ body div{
 
 .m-10{
     margin: 10px;
+}
+
+.icons{
+
+    color:white;
+    cursor: pointer;
+    
+
+}
+
+footer i{
+    padding: 10px;
+    
+}
+
+.border{
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: #bf8b73;
+    transition: background-color 0.3s;
+}
+.border:hover{
+    background-color: #73463C;
+    
+}
+
+.ta{
+    text-align: center;
 }
