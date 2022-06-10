@@ -1,3 +1,10 @@
+
+h1{
+    margin: 0px;
+    padding: 0px;
+}
+
+
 ul {
     list-style: none;
     margin: 0px;
@@ -31,10 +38,13 @@ body {
 
 
 #contact-conteneur .titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     font-size: 1.5rem;
     color: white;
-    padding: 2rem;
+    padding: 2rem 0rem;
     background-color: #548DBF;
     margin: 0px;
     width: 100%;
