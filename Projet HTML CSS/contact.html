@@ -5,42 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Mon Blog Voyage : Contact</title>
     <link rel="stylesheet" href="css/contact.css">
     <script src="https://kit.fontawesome.com/c9db60c89e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <main>
-        <section id="contact-conteneur">
-            <div id="coordonnées">
-                <h1>Contact</h1>
-                <p>Vous pouvez me joindre pour toute proposition commerciale par téléphone et mail ou en utilisant le
-                    formulaire ci-dessous:</p>
-                <ul>
-                    <li><i class="fa-solid fa-phone"></i>Téléphone: <a href="tel: 01 23 45 67 89">01 23 45 67 89</a>
-                    </li>
-                    <li><i class="fa-solid fa-at"></i>Mail : <a
-                            href="mailto: client.content@gmail.com">client.content@gmail.com</a></li>
-                </ul>
-            </div>
-            <div id="formulaire-de-contact">
-                
-                <form>
-                    <fieldset>
-                        <legend><h2>Formulaire de contact</h2></legend>
-                    <label for="Auteur">Nom:</label>
-                    <input type="text" id="Auteur" required>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" required>
-                    <label for="message">Message:</label>
-                    <textarea id="message"></textarea>
-                    <input type="submit" id="envoi" Value="Envoyer le message">
-                </fieldset>
-                </form>
-            </div>
-        </section>
-    </main>
+        <main>
+            <section id="contact-conteneur">
+                <div class="titre"><h1>Contact</h1>
+                </div>
+                <div class="coordonnées">
+
+                    
+                    <div id="image">
+                    <img src="img\pexels-suzy-hazelwood-1768060-lettres.jpg" alt="Une pile d'enveloppes"></div>
+                    <p>Vous pouvez me joindre pour toute proposition commerciale par téléphone et mail ou en utilisant
+                        le
+                        formulaire ci-dessous:</p>
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i>Téléphone: <a href="tel: 01 23 45 67 89">01 23 45 67 89</a>
+                        </li>
+                        <li><i class="fa-solid fa-at"></i>Mail : <a
+                                href="mailto: client.content@gmail.com">client.content@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="formulaire-de-contact">
+
+                    <form>
+                        <fieldset>
+                            <legend class="titre-formulaire">
+                                <h2>Formulaire de contact</h2>
+                            </legend>
+                            <label for="Auteur">Nom:</label>
+                            <input type="text" id="Auteur" class="auteur" required>
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" class="email" required>
+                            <label for="message">Message:</label>
+                            <textarea id="message" class="textarea"></textarea>
+                            <input type="submit" id="envoi" class="envoi" Value="Envoyer le message">
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
 </body>
 
 </html>

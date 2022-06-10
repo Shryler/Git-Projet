@@ -1,88 +1,133 @@
-ul{
+ul {
     list-style: none;
     margin: 0px;
 }
 
-li{
+li {
     margin: 0px;
 }
 
-body{
-    min-width: 375px;
-    height: auto;
+body {
+    margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
-    margin: 0px;
-   
+    color: #73463C;
 }
 
-#contact-conteneur{
+
+#contact-conteneur {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    align-items: center;
-
-    
-}
-
-#contact-conteneur #coordonnées{
     width: 100%;
-    
+    align-items: center;
+    margin: 0 auto;
+
+
+}
+
+#contact-conteneur .coordonnées {
+    width: 100%;
+
 }
 
 
-#contact-conteneur #coordonnées h1{
+#contact-conteneur .titre {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
     padding: 2rem;
-    background-color:#548DBF;
+    background-color: #548DBF;
     margin: 0px;
-    
+    width: 100%;
+
 }
 
 
 
 
-p{
+p {
     margin: 0px;
     padding: 1rem;
 }
 
-#contact-conteneur ul{
-    align-self:flex-start;
-}
-
-#contact-conteneur #formulaire-de-contact{
+#contact-conteneur ul {
     align-self: flex-start;
-    padding: 1rem;
-    width : 100%;
+}
+
+#contact-conteneur .formulaire-de-contact {
+    align-self: flex-start;
+    width: 100%;
     align-self: auto;
-    
+
+}
+
+
+#contact-conteneur .formulaire-de-contact fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border-color: #548DBF;
+    border-style: solid;
+
+
+}
+
+/* 548DBF  == bleu */
+/* #73463C == marron */
+
+#contact-conteneur .formulaire-de-contact fieldset .auteur {
+    border-color: #548DBF;
+    border-style: solid;
+    border-width: thin;
+
+
 }
 
 
-#contact-conteneur #formulaire-de-contact fieldset{
-   display: flex;
-   flex-direction: column;
-   margin: 1rem;
+#contact-conteneur .formulaire-de-contact fieldset .email {
+    border-color: #548DBF;
+    border-style: solid;
+    border-width: thin;
 
 
 }
-#contact-conteneur #formulaire-de-contact fieldset label{
+
+#contact-conteneur .formulaire-de-contact fieldset label {
     padding: 0.5rem;
- 
- 
- }
 
- #contact-conteneur #formulaire-de-contact #envoi{
+
+}
+
+#contact-conteneur .formulaire-de-contact .envoi {
     margin: 15px auto 0px auto;
- }
+    border-width: 0px;
 
-#contact-conteneur textarea{
+}
+
+#contact-conteneur .textarea {
     width: auto;
     height: 200px;
+    border-color: #548DBF;
+    border-style: solid;
+    border-width: thin;
 }
 
-#contact-conteneur h2{
+#contact-conteneur .titre-formulaire {
     font-size: 1rem;
+}
+
+img {
+    display: none;
+}
+
+
+
+@media only screen and (min-width: 460px) {
+    img {
+        display: block;
+        width: 100%;
+        max-height: auto;
+
+
+    }
+
 }
