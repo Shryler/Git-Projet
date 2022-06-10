@@ -1,30 +1,52 @@
 ul{
     list-style: none;
-    margin: 1em;
+    margin: 0px;
 }
 
 li{
-    
+    margin: 0px;
 }
 
 body{
     min-width: 375px;
-    max-width: 667px;
     height: auto;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+   
 }
 
 #contact-conteneur{
     display: flex;
     flex-direction: column;
-    max-width: 90%;
+    max-width: 100%;
     align-items: center;
-    margin : 10px;
+
+    
+}
+
+#contact-conteneur #coordonnées{
+    width: 100%;
+    
 }
 
 
-#contact-conteneur h1{
+#contact-conteneur #coordonnées h1{
     text-align: center;
-    width: 100%;}
+    font-size: 1rem;
+    color: white;
+    padding: 2rem;
+    background-color:#548DBF;
+    margin: 0px;
+    
+}
+
+
+
+
+p{
+    margin: 0px;
+    padding: 1rem;
+}
 
 #contact-conteneur ul{
     align-self:flex-start;
@@ -32,11 +54,35 @@ body{
 
 #contact-conteneur #formulaire-de-contact{
     align-self: flex-start;
-    width: 100%;
+    padding: 1rem;
+    width : 100%;
+    align-self: auto;
     
 }
 
+
+#contact-conteneur #formulaire-de-contact fieldset{
+   display: flex;
+   flex-direction: column;
+   margin: 1rem;
+
+
+}
+#contact-conteneur #formulaire-de-contact fieldset label{
+    padding: 0.5rem;
+ 
+ 
+ }
+
+ #contact-conteneur #formulaire-de-contact #envoi{
+    margin: 15px auto 0px auto;
+ }
+
 #contact-conteneur textarea{
-    width: 80%;
+    width: auto;
     height: 200px;
+}
+
+#contact-conteneur h2{
+    font-size: 1rem;
 }
