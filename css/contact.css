@@ -10,14 +10,7 @@ ul {
 
 li {
     margin: 0px;
-}
-
-#image {
-    text-align: center;
-    margin-top: 20px;
-}
-#image img {
-    height:150px;
+    margin-bottom: 1.5rem;
 }
 
 #contact-conteneur {
@@ -25,7 +18,9 @@ li {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    max-width: 1280px;
     margin: 0 auto;
+    
 }
 
 #contact-conteneur .coordonnées {
@@ -40,35 +35,51 @@ li {
     font-size: 1.5rem;
     color: white;
     padding: 2rem 0rem;
-    background-color: #548DBF;
+    background: linear-gradient(to right, #6abad920, #82C9D920), url(../img/pexels-suzy-hazelwood-1768060-lettres.jpg);
+    background-size: cover;
+    opacity: 100% ;
     margin: 0px;
     width: 100%;
 }
 
-p {
-    margin: 0px;
-    padding: 1rem;
+#contact-conteneur p {
+    display: block;
+    font-size: 1rem;
+    margin-block-start: 0.83rem;
+    margin-block-end: 0.83rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
 }
 
 #contact-conteneur ul {
     align-self: flex-start;
 }
 
+#contact-conteneur .iframe{
+    display: none;
+}
 #contact-conteneur .formulaire-de-contact {
     align-self: flex-start;
     width: 100%;
     align-self: auto;
+    margin: 0rem 1rem 0rem 1rem;
 }
 
 
 #contact-conteneur .formulaire-de-contact fieldset {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
     border-color: #548DBF;
     border-style: solid;
 }
 
+
+#contact-conteneur .formulaire-de-contact h2{
+    margin-block: 0.83rem;
+  
+}
 /* 548DBF  == bleu */
 /* #73463C == marron */
 
@@ -129,8 +140,15 @@ p {
 }
 
 @media only screen and (min-width: 460px) {
-    #image {
+        #contact-conteneur .coordonnées-et-formulaire{
+            display: flex;
+            
+
+
+        }
+
+      #contact-conteneur .coordonnées-et-formulaire .iframe{
         display: block;
-        width: 100%;
-    }
+        max-height: 70%;}
+
 }
