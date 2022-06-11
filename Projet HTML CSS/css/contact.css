@@ -1,9 +1,7 @@
-
-h1{
+h1 {
     margin: 0px;
     padding: 0px;
 }
-
 
 ul {
     list-style: none;
@@ -14,12 +12,13 @@ li {
     margin: 0px;
 }
 
-body {
-    margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
-    color: #73463C;
+#image {
+    text-align: center;
+    margin-top: 20px;
 }
-
+#image img {
+    height:150px;
+}
 
 #contact-conteneur {
     display: flex;
@@ -27,15 +26,11 @@ body {
     width: 100%;
     align-items: center;
     margin: 0 auto;
-
-
 }
 
 #contact-conteneur .coordonnées {
     width: 100%;
-
 }
-
 
 #contact-conteneur .titre {
     display: flex;
@@ -48,11 +43,7 @@ body {
     background-color: #548DBF;
     margin: 0px;
     width: 100%;
-
 }
-
-
-
 
 p {
     margin: 0px;
@@ -67,7 +58,6 @@ p {
     align-self: flex-start;
     width: 100%;
     align-self: auto;
-
 }
 
 
@@ -77,8 +67,6 @@ p {
     margin: 1rem;
     border-color: #548DBF;
     border-style: solid;
-
-
 }
 
 /* 548DBF  == bleu */
@@ -88,29 +76,22 @@ p {
     border-color: #548DBF;
     border-style: solid;
     border-width: thin;
-
-
 }
 
 #contact-conteneur .formulaire-de-contact fieldset .auteur:focus {
     background-color: #82C9D9;
     outline-style: none;
-
-
 }
 
 #contact-conteneur .formulaire-de-contact fieldset .email {
     border-color: #548DBF;
     border-style: solid;
     border-width: thin;
-
-
 }
+
 #contact-conteneur .formulaire-de-contact fieldset .email:focus {
     background-color: #82C9D9;
     outline-style: none;
-
-
 }
 
 /* input[type=email]{
@@ -119,8 +100,6 @@ p {
 
 #contact-conteneur .formulaire-de-contact fieldset label {
     padding: 0.5rem;
-
-
 }
 
 #contact-conteneur .formulaire-de-contact .envoi {
@@ -131,7 +110,6 @@ p {
     font-size: inherit;
     border-radius: 20px;
     padding: 10px;
-
 }
 
 #contact-conteneur .textarea {
@@ -142,7 +120,7 @@ p {
     border-width: thin;
 }
 
-#contact-conteneur .textarea:focus{
+#contact-conteneur .textarea:focus {
     outline-style: none;
 }
 
@@ -150,20 +128,9 @@ p {
     font-size: 1rem;
 }
 
-img {
-    display: none;
-}
-
-
-
 @media only screen and (min-width: 460px) {
     #image {
         display: block;
         width: 100%;
-
-
-
     }
-
 }
-
