@@ -12,20 +12,14 @@ li {
     margin: 0px;
 }
 
-#image {
-    text-align: center;
-    margin-top: 20px;
-}
-#image img {
-    height:150px;
-}
-
 #contact-conteneur {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
+    max-width: 1280px;
     margin: 0 auto;
+    
 }
 
 #contact-conteneur .coordonnées {
@@ -40,7 +34,9 @@ li {
     font-size: 1.5rem;
     color: white;
     padding: 2rem 0rem;
-    background-color: #548DBF;
+    background: linear-gradient(to right, #6abad920, #82C9D920), url(../img/pexels-suzy-hazelwood-1768060-lettres.jpg);
+    background-size: cover;
+    opacity: 100% ;
     margin: 0px;
     width: 100%;
 }
@@ -129,8 +125,16 @@ p {
 }
 
 @media only screen and (min-width: 460px) {
-    #image {
-        display: block;
-        width: 100%;
-    }
+        .coordonnées-et-formulaire{
+            display:flex;
+            flex-direction:row;
+            align-items: flex-start;
+            margin: 2rem;
+
+        }
+        .coordonnées-et-formulaire .formulaire-de-contact{
+            
+        }
+
 }
+
