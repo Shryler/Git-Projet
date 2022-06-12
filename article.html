@@ -9,15 +9,18 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="image/png" href="./img/logo.png" />
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v14.0"
+    nonce="0biJgmVs"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-</style>
-<style>
+  </style>
+  <style>
     @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
-    </style>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-        </style>
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+  </style>
   <title>Mon blog voyage - Article de voyage</title>
   <link rel="stylesheet" href="./css/anthony.css">
   <link rel="stylesheet" href="./css/navbar.css">
@@ -88,37 +91,15 @@
     </div>
     <div class="filariane"><i class="fa-solid fa-globe fa-2xl"></i><a href="index.html">Page d'accueil</a> <i
         class="fa-solid fa-plane"></i><a href="europe.html">Europe</a></div>
-    <div class="container">
-      <div class="article-gf">
+    <div class="container-article">
+      <div class="titre-container-article">
+        <h1>Mon voyage en Palombie</h1>
+      </div>
+      <div class="left-container-article">
         <div class="img-article-gf"><img src="./img/europe-1.jpeg" alt="">
-          <p>Grèce</p>
         </div>
         <div class="description">
-          <h3>Vue Du Paysage De La Grèce</h3>
-          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-            Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-            Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem
-            Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable
-            source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-            of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
-            during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
-            section 1.10.32.
-
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
-            1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
-            original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-            Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-            Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem
-            Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable
-            source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-            of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
-            during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
-            section 1.10.32.
-
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
-            1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
-            original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+          <h3>Vue du paysage</h3>
           <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
             Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
             Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem
@@ -132,26 +113,77 @@
             1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
             original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
         </div>
-          <div class="commentaire">
-            <h3>Laisser un commentaire</h3>
-            <form action="" method="get" class="form-example">
-              <div class="form-input">
-                <label for="name">Nom / Pseudo : </label>
-                <input type="text" name="name" id="name" required>
-              </div>
-              <div class="form-input">
-                <label for="email">Adresse mail :</label>
-                <input type="email" name="email" id="email" required>
-              </div>
-              <label for="commentaire">Commentaire :</label>
-              <textarea name="commentaire" id="commentaire"></textarea>
-              <div class="form-example-submit">
-                <input type="submit" value="Envoyer">
-              </div>
-            </form>
-          </div>
+        <hr class="separator">
+        <div class="view-comment">
+          <h3>0 Commentaire(s)</h3>
+          <p>Il n'y a aucun commentaire, n'hésitez pas à en laisser un à l'aide du formulaire ci-dessous</p>
+        </div>
+        <hr class="separator">
+        <div class="commentaire">
+          <h3>Ajouter un commentaire</h3>
+          <p>Votre adresse e-mail ne sera pas publiée. Sauf si vous êtes méchants...</p>
+          <form action="" method="get" class="form-example">
+            <div class="form-input">
+              <label for="name">Nom / Pseudo</label>
+              <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-input">
+              <label for="email">Adresse mail</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <label for="commentaire">Commentaire</label>
+            <textarea name="commentaire" id="commentaire"></textarea>
+            <div class="form-example-submit">
+              <input type="submit" value="Envoyer">
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
+      <aside class="right-container-article">
+        <div class="contain-right-container">
+          <h3>L'actu sur Facebook</h3>
+          <hr class="separator">
+          <img src="./img/wid-fb.png" alt="">
+        </div>
+        <div class="contain-right-container">
+          <h3>Derniers articles</h3>
+          <hr class="separator">
+          <div class="cr-last-articles">
+            <div class="cr-la-items">
+              <div class="cr-la-items-img">
+                <a href="./afrique.html"><img src="./img/afrique.jpg" alt="">
+                </a>
+                <p>Afrique</p>
+              </div>
+              <div class="cr-la-items-img">
+                <a href="./amerique.html"><img src="./img/amerique.jpg" alt="">
+                </a>
+                <p>Amérique</p>
+              </div>
+              <div class="cr-la-items-img">
+                <a href="./antarctique.html"><img src="./img/antarctique.jpg" alt="">
+                </a>
+                <p>Antarctique</p>
+              </div>
+              <div class="cr-la-items-img">
+                <a href="./asie.html"><img src="./img/asie.jpg" alt="">
+                </a>
+                <p>Asie</p>
+              </div>
+              <div class="cr-la-items-img">
+                <a href="./europe.html"><img src="./img/europe.jpg" alt="">
+                </a>
+                <p>Europe</p>
+              </div>
+              <div class="cr-la-items-img">
+                <a href="./oceanie.html"><img src="./img/oceanie.jpg" alt="">
+                </a>
+                <p>Océanie</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
   </main>
   <!-- Footer - Patrick -->
   <div class="airplane">
