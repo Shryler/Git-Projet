@@ -41,12 +41,56 @@ a {
 .head-titre-continent {
     text-align: center;
     padding: 150px 0;
-    background: linear-gradient(0.25turn, #548dbf91, #ffffffe6, #bf8b737b), url(../img/destination.jpeg);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+.background-afrique {
+    background: linear-gradient(0.25turn, #548dbfad, #ffffffe6, #bf8b73ad), url(../img/bg-afrique.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+.background-amerique {
+    background: linear-gradient(0.25turn, #548dbfad, #ffffffe6, #bf8b73ad), url(../img/bg-amerique.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.background-antarctique {
+    background: linear-gradient(0.25turn, #548dbfad, #ffffffe6, #bf8b73ad), url(../img/bg-antarctique.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.background-asie {
+    background: linear-gradient(0.25turn, #548dbfad, #ffffffe6, #bf8b73ad), url(../img/bg-asie.jpg);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.background-europe {
+    background: linear-gradient(0.25turn, #548dbfad, #ffffffe6, #bf8b73ad), url(../img/bg-europe.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.background-oceanie {
+    background: linear-gradient(0.25turn, #548dbfad, #ffffffe6, #bf8b73ad), url(../img/bg-oceanie.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.background-article {
+    background: linear-gradient(0.25turn, #548dbfad, #ffffffe6, #bf8b737b), url(../img/destination.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .titre-continent {
