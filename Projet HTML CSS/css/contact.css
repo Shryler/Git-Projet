@@ -1,14 +1,14 @@
-h1 {
+#contact-conteneur h1 {
     margin: 0px;
     padding: 0px;
 }
 
-ul {
+#contact-conteneur ul {
     list-style: none;
     margin: 0px;
 }
 
-li {
+#contact-conteneur li {
     margin: 0px;
     margin-bottom: 1.5rem;
 }
@@ -25,6 +25,10 @@ li {
 
 #contact-conteneur .coordonnées {
     width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
 }
 
 #contact-conteneur .titre {
@@ -51,6 +55,7 @@ li {
     margin-inline-end: 0px;
     font-weight: bold;
     margin-bottom: 1.5rem;
+    margin-left: 1rem;
 }
 
 #contact-conteneur ul {
@@ -62,9 +67,9 @@ li {
 }
 #contact-conteneur .formulaire-de-contact {
     align-self: flex-start;
-    width: 100%;
     align-self: auto;
     margin: 0rem 1rem 0rem 1rem;
+    flex: 1;
 }
 
 
@@ -138,6 +143,8 @@ li {
 #contact-conteneur .titre-formulaire {
     font-size: 1rem;
 }
+/*Grand écran */
+
 
 @media only screen and (min-width: 460px) {
         #contact-conteneur .coordonnées-et-formulaire{
@@ -149,6 +156,10 @@ li {
 
       #contact-conteneur .coordonnées-et-formulaire .iframe{
         display: block;
-        max-height: 70%;}
+        max-height: 70%;
+        margin: 1rem;
+    
+    
+    }
 
 }
