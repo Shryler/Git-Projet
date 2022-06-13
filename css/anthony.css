@@ -672,4 +672,7 @@ input[type=submit]:hover {
     main h3 {
         font-size: 1.1rem;
     }
+    .ta, .column h3 {
+        font-size: 1.1rem;
+    }
 }
