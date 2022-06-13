@@ -1,6 +1,10 @@
 #contact-conteneur h1 {
-    margin: 0px;
-    padding: 0px;
+    font-family: "Oswald", Sans-serif;
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin: 0;
+    color: #7a270095;
+    text-transform: uppercase;
 }
 
 #contact-conteneur .coordonnées li {
@@ -112,13 +116,21 @@
 }
 
 #contact-conteneur .formulaire-de-contact .envoi {
-    margin: 15px auto 0px auto;
-    border-style: none;
-    background-color: #548DBF;
+    height: 2.8rem;
+    width: 150px;
+    font-family: "Oswald", Sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 15px 0;
+    margin: 20px auto;
     color: white;
-    font-size: 0.7rem;
-    border-radius: 20px;
-    padding: 10px;
+    cursor: pointer;
+    padding: 0 10px;
+    transition: background-color 0.3s;
+    background-color: #bf8b73;
 }
 
 #contact-conteneur .textarea {
