@@ -22,15 +22,21 @@
     
 }
 
+#contact-conteneur .separator {
+    margin: 0 auto;
+    border: 0;
+    max-width: 400px;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #bf8b73 50%, rgba(0, 0, 0, 0) 100%);
+}
+
 #contact-conteneur .coordonnées {
     width: 100%;
     flex: 1;
 }
 
 #contact-conteneur .titre {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
     color: white;
     background: linear-gradient(0.25turn, #548dbfad, #ffffffe6, #bf8b73ad), url(/img/lettres.jpg);
