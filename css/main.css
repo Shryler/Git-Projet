@@ -1,6 +1,9 @@
 main {
     margin-top: 60px;
 }
+img {
+    object-fit: cover;
+}
 
 /* Présentation */
 .presentation-contain{
@@ -11,8 +14,6 @@ main {
     margin: 1rem auto;
     flex-wrap: wrap;
     padding: 20px;
-    
-    
 }
 .presentation-contain-text{
     flex:2;
