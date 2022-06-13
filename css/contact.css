@@ -7,6 +7,9 @@
     text-transform: uppercase;
 }
 
+#contact-conteneur .ul{
+    margin: 0 auto;
+}
 #contact-conteneur .coordonnées li {
     margin: 0px;
     margin-bottom: 1.5rem;
@@ -22,6 +25,12 @@
     
 }
 
+#contact-conteneur .coordonnées-et-formulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #contact-conteneur .separator {
     margin: 0 auto;
     border: 0;
@@ -34,6 +43,7 @@
 #contact-conteneur .coordonnées {
     width: 100%;
     flex: 1;
+    margin-top: 2rem;
 }
 
 #contact-conteneur .titre {
@@ -66,13 +76,22 @@
     margin: 0px;
 }
 
-#contact-conteneur .iframe{
-    display: none;
+.icone{
+    margin-right: 5px;
 }
+
+#contact-conteneur .carte{
+    display: none;
+
+}
+
 #contact-conteneur .formulaire-de-contact {
     align-self: auto;
-    margin: 0rem 1rem 0rem 1rem;
+    margin: 0 auto;
     flex: 1;
+    width: 90%;
+    margin-top : 1rem;
+
 }
 
 
@@ -158,6 +177,8 @@
 @media only screen and (min-width: 460px) {
         #contact-conteneur .coordonnées-et-formulaire{
             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
         #contact-conteneur .titre {
             padding: 75px 0;}
@@ -166,8 +187,15 @@
                 font-size: 4.5rem;
             }
 
-      #contact-conteneur .coordonnées-et-formulaire .iframe{
-        display: block;
+
+      #contact-conteneur .formulaire-de-contact{
+        min-width: 500px;
+        margin: 1rem;
+      }                  
+      #contact-conteneur .coordonnées-et-formulaire .carte{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         max-height: 70%;
         margin-left: 1rem;}
 
