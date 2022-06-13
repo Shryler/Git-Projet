@@ -1,0 +1,153 @@
+#contact-conteneur h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+#contact-conteneur .coordonnées li {
+    margin: 0px;
+    margin-bottom: 1.5rem;
+}
+
+#contact-conteneur {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    
+}
+
+#contact-conteneur .coordonnées {
+    width: 100%;
+    flex: 1;
+}
+
+#contact-conteneur .titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    padding: 2rem 0rem;
+    background: linear-gradient(to right, #6abad920, #82C9D920), url(../img/pexels-suzy-hazelwood-1768060-lettres.jpg);
+    background-size: cover;
+    opacity: 100% ;
+    margin: 0px;
+    width: 100%;
+}
+
+#contact-conteneur p {
+    display: block;
+    font-size: 1rem;
+    margin-block-start: 0.83rem;
+    margin-block-end: 0.83rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+}
+
+#contact-conteneur ul {
+    align-self: flex-start;
+    list-style: none;
+    margin: 0px;
+}
+
+#contact-conteneur .iframe{
+    display: none;
+}
+#contact-conteneur .formulaire-de-contact {
+    align-self: auto;
+    margin: 0rem 1rem 0rem 1rem;
+    flex: 1;
+}
+
+
+#contact-conteneur .formulaire-de-contact fieldset {
+    display: flex;
+    flex-direction: column;
+    border-color: #548DBF;
+    border-style: solid;
+}
+
+
+#contact-conteneur .formulaire-de-contact h2{
+    margin-block: 0.83rem;
+  
+}
+/* 548DBF  == bleu */
+/* #73463C == marron */
+
+#contact-conteneur .formulaire-de-contact fieldset .auteur {
+    border-color: #548DBF;
+    border-style: solid;
+    border-width: thin;
+}
+
+#contact-conteneur .formulaire-de-contact fieldset .auteur:focus {
+    background-color: #82C9D9;
+    outline-style: none;
+}
+
+#contact-conteneur .formulaire-de-contact fieldset .email {
+    border-color: #548DBF;
+    border-style: solid;
+    border-width: thin;
+}
+
+#contact-conteneur .formulaire-de-contact fieldset .email:focus {
+    background-color: #82C9D9;
+    outline-style: none;
+}
+
+/* input[type=email]{
+    background-color: #82C9D9 !important;
+} */
+
+#contact-conteneur .formulaire-de-contact fieldset label {
+    padding: 0.5rem;
+}
+
+#contact-conteneur .formulaire-de-contact .envoi {
+    margin: 15px auto 0px auto;
+    border-style: none;
+    background-color: #548DBF;
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#contact-conteneur .textarea {
+    width: auto;
+    height: 200px;
+    border-color: #548DBF;
+    border-style: solid;
+    border-width: thin;
+}
+
+#contact-conteneur .textarea:focus {
+    outline-style: none;
+}
+
+#contact-conteneur .titre-formulaire {
+    font-size: 1rem;
+}
+
+@media only screen and (min-width: 460px) {
+        #contact-conteneur .coordonnées-et-formulaire{
+            display: flex;
+        }
+
+      #contact-conteneur .coordonnées-et-formulaire .iframe{
+        display: block;
+        max-height: 70%;
+        margin-left: 1rem;}
+
+        #contact-conteneur .formulaire-de-contact .envoi{
+            font-size: inherit;
+        }
+}
