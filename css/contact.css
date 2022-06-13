@@ -1,6 +1,6 @@
 #contact-conteneur h1 {
     font-family: "Oswald", Sans-serif;
-    font-size: 4.5rem;
+    font-size: 2rem;
     font-weight: 600;
     margin: 0;
     color: #7a270095;
@@ -32,14 +32,14 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-size: 1.5rem;
     color: white;
-    padding: 2rem 0rem;
-    background: linear-gradient(to right, #6abad920, #82C9D920), url(/img/lettres.jpg);
+    background: linear-gradient(0.25turn, #548dbfad, #ffffffe6, #bf8b73ad), url(/img/lettres.jpg);
     background-size: cover;
     opacity: 100% ;
     margin: 0px;
     width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    padding: 25px 0;
 }
 
 #contact-conteneur p {
@@ -153,6 +153,12 @@
         #contact-conteneur .coordonnées-et-formulaire{
             display: flex;
         }
+        #contact-conteneur .titre {
+            padding: 75px 0;}
+
+            #contact-conteneur h1 {
+                font-size: 4.5rem;
+            }
 
       #contact-conteneur .coordonnées-et-formulaire .iframe{
         display: block;
