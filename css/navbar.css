@@ -1,0 +1,249 @@
+nav {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    color: white;
+    background-color: #548DBF;
+    top: 0px;
+    display: flex;
+    align-items: baseline;
+    z-index: 999;
+}
+
+.conteneur-left-nav {
+    flex: 1;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.conteneur-left-nav img {
+    height: 35px;
+}
+
+.conteneur-left-nav h2 {
+    padding-left: 10px;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.navbar-mobile h2 {
+    padding:22px 5px;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 300;
+    top: 35%;
+}
+
+.navbar-mobile a img {
+    height:50px;
+    padding-left: 10px;
+    padding-top: -10px;
+    margin-top: -5px;
+}
+
+.navbar-mobile {
+    display: flex;
+}
+
+.conteneur-nav {
+    position: absolute;
+    flex: 1;
+    width: 100%;
+}
+
+nav input[type=checkbox] {
+    display: none;
+}
+
+.navbar-mobile {
+    width: 100%;
+    height: 64px;
+    background-color: #548DBF;
+}
+
+nav label {
+    display: inline-block;
+    width: 50px;
+    position: fixed;
+    right: 0;
+    padding: 10px 0px;
+}
+
+nav ul {
+    display: none;
+    list-style-type: none;
+    background-color: #548DBF;
+    padding: 0;
+}
+
+nav input[type=checkbox]:checked+ul {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+nav>div>ul>li>a {
+    color: white;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+}
+
+.sous {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0;
+    z-index: 1000;
+}
+
+.sous li {
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+.sous a {
+    text-align: center;
+    padding: 10px;
+    background-color: RGBa(200, 200, 200, 0.8);
+}
+
+
+@media screen and (min-width: 980px) {
+    #nav {
+        background-color: #548DBF;
+        overflow: hidden;
+    }
+
+    .conteneur-search {
+        display:flex;
+        align-items: center;
+        flex: 1;
+        text-align: end;
+        padding-right: 10px;
+    }
+
+    .conteneur-search input {
+        height: 35px;
+        width:100%;
+        margin:0 10px;
+        border: 2px solid rgb(209, 209, 209);
+        border-radius: 15px 0 0 0;
+        margin: 0 2px;
+        padding-left:10px;
+    }
+    .conteneur-search i {
+        height: 31px;
+        width: 30px;
+        display: flex;
+        border: 2px solid rgb(209, 209, 209);
+        border-radius: 0 15px 15px 0;
+        padding:0 5px;
+        cursor:pointer;
+        align-items: center;
+        transition: background-color 0.3s;
+        justify-content: space-evenly;
+    }
+    .conteneur-search i:hover {
+        background-color:rgb(209, 209, 209);
+        color:#548DBF;
+    }
+    .navbar-mobile {
+        display: none;
+    }
+
+    .contain-nav {
+        background-color: #548DBF;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        justify-content: space-around;
+        top: 0;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        z-index: 999;
+    }
+
+    nav {
+        max-width: 1280px;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .conteneur-nav {
+        position: static;
+        flex:3;
+    }
+
+    .conteneur-nav label,
+    .conteneur-nav input {
+        display: none;
+    }
+
+    nav input[type=checkbox]:checked+ul,
+    nav ul {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0;
+    }
+
+    nav ul li {
+        position: relative;
+        background-color: #548DBF;
+    }
+
+    nav>div>ul>li>a {
+        color: white;
+    }
+
+    nav a {
+        border-bottom: 1px solid transparent;
+        transition: transform 0.5s;
+    }
+
+    .sous {
+        display: none;
+        box-shadow: 0px 1px 2px #CCC;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    nav>div>ul li:hover .sous {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .sous a {
+        border-bottom: none;
+        background-color: white;
+    }
+
+    .sous a:hover {
+        border-bottom: none;
+        background-color: RGBa(200, 200, 200, 0.1);
+    }
+
+    .deroulant>a::after {
+        content: " ▼";
+        font-size: 12px;
+    }
+}
+
+.conteneur-contenu {
+    margin: 50px 20px;
+    height: 1500px;
+}
