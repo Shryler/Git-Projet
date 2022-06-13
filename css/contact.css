@@ -1,14 +1,13 @@
-h1 {
-    margin: 0px;
-    padding: 0px;
+#contact-conteneur h1 {
+    font-family: "Oswald", Sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    color: #7a270095;
+    text-transform: uppercase;
 }
 
-ul {
-    list-style: none;
-    margin: 0px;
-}
-
-.coordonnées li {
+#contact-conteneur .coordonnées li {
     margin: 0px;
     margin-bottom: 1.5rem;
 }
@@ -23,23 +22,30 @@ ul {
     
 }
 
+#contact-conteneur .separator {
+    margin: 0 auto;
+    border: 0;
+    max-width: 400px;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #bf8b73 50%, rgba(0, 0, 0, 0) 100%);
+}
+
 #contact-conteneur .coordonnées {
     width: 100%;
+    flex: 1;
 }
 
 #contact-conteneur .titre {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
-    font-size: 1.5rem;
     color: white;
-    padding: 2rem 0rem;
-    background: linear-gradient(to right, #6abad920, #82C9D920), url(../img/pexels-suzy-hazelwood-1768060-lettres.jpg);
+    background: linear-gradient(0.25turn, #548dbfad, #ffffffe6, #bf8b73ad), url(/img/lettres.jpg);
     background-size: cover;
     opacity: 100% ;
     margin: 0px;
     width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    padding: 25px 0;
 }
 
 #contact-conteneur p {
@@ -50,21 +56,23 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin: 1rem 1rem 1rem 1rem;
+    text-align: justify;
 }
 
 #contact-conteneur ul {
     align-self: flex-start;
+    list-style: none;
+    margin: 0px;
 }
 
 #contact-conteneur .iframe{
     display: none;
 }
 #contact-conteneur .formulaire-de-contact {
-    align-self: flex-start;
-    width: 100%;
     align-self: auto;
     margin: 0rem 1rem 0rem 1rem;
+    flex: 1;
 }
 
 
@@ -114,13 +122,21 @@ ul {
 }
 
 #contact-conteneur .formulaire-de-contact .envoi {
-    margin: 15px auto 0px auto;
-    border-style: none;
-    background-color: #548DBF;
+    height: 2.8rem;
+    width: 150px;
+    font-family: "Oswald", Sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 15px 0;
+    margin: 20px auto;
     color: white;
-    font-size: inherit;
-    border-radius: 20px;
-    padding: 10px;
+    cursor: pointer;
+    padding: 0 10px;
+    transition: background-color 0.3s;
+    background-color: #bf8b73;
 }
 
 #contact-conteneur .textarea {
@@ -143,8 +159,19 @@ ul {
         #contact-conteneur .coordonnées-et-formulaire{
             display: flex;
         }
+        #contact-conteneur .titre {
+            padding: 75px 0;}
+
+            #contact-conteneur h1 {
+                font-size: 4.5rem;
+            }
 
       #contact-conteneur .coordonnées-et-formulaire .iframe{
         display: block;
-        max-height: 70%;}
+        max-height: 70%;
+        margin-left: 1rem;}
+
+        #contact-conteneur .formulaire-de-contact .envoi{
+            font-size: inherit;
+        }
 }
