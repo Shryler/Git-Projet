@@ -22,6 +22,8 @@ main {
 }
 .presentation-img {
     flex:1;
+    display: flex;
+    justify-content: center;
 }
 .btn-presentation{
     width: 200px;
